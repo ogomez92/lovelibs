@@ -11,7 +11,7 @@ Here are the libraries currently available.
 
 ## Say
 
-Say is a snumber and string speaker. It will speak numbers, either positive or negative, as well as strings.
+Say is a number and string speaker. It will speak numbers, either positive or negative, as well as strings.
 
 ### Usage
 
@@ -19,7 +19,7 @@ Say is a snumber and string speaker. It will speak numbers, either positive or n
 local Say = require("lib/say") -- require the library
 
 -- in main.load, create a new instance:
-local say = Say:new() -- create new instance of say
+local say = Say() -- create new instance of say
 say.prepend = "sounds/english/"
 say.append=".ogg" --or any extension supported by love2d
 say.includeAnd=true --this tells lua whether to include the word "and" when processing numbers
